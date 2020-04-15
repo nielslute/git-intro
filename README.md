@@ -1,2 +1,2 @@
-# task
-It's a template repository for creating tasks
+# GitHub Intro
+THis task is an introduction into GitHub
