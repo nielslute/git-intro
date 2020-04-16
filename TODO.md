@@ -1,12 +1,16 @@
 # GitHub Intro
 
-## Topics
+## Het doel van deze opdracht
 
-* Setup GitHub
-* Fork repository
-* Werk aan de code
-* Publiceer de code
-* Documenteer je bevindingen
+....
+
+## Stappen
+
+* [Setup GitHub](#setup)
+* [Fork repository](#fork-repository)
+* [Werk aan de code](#werk-lokaal-aan-de-code)
+* [Publiceer de code](#publiceer-gewijzigde-code-naar-github)
+* [Documenteer je bevindingen](#documenteer-je-bevindingen)
 
 ### Setup
 
