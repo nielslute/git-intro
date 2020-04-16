@@ -1,21 +1,21 @@
 ---
-title: een_titel
-description: een_korte_beschrijving_van_de_taak
-semester: nummeriek_1-4
+title: GitHub Intro
+description: Leer code op GitHub in een repository te plaatsen, up-to-date te houden en te publiceren naar GitHub Pages.
+semester: 1
 taskclass: keuze_uit_taakklassen_per_semester
-level: nummeriek_niveau_1-5
+level: 1
 behavior-criteria:{
-  collaboration: 0, 
-  learning-capacity: 0, 
-  problem-solving:0, 
-  act-methodically:0, 
-  work-systematically:0,
-  communicating:0
+  collaboration: 1,
+  learning-capacity: 2,
+  problem-solving: 1,
+  act-methodically: 2,
+  work-systematically: 2,
+  communicating: 1
 }
-type: individueel_of_groep
-tags: taakklassen, gescheiden door, komma's
+type: individueel
+tags: github, repository, conventions
 burn-points: ...
 ---
 
-# Een titel
-Hier tekstueel een heldere beschrijving van de taak.
+# GitHub Intro
+Leer code op GitHub in een repository te plaatsen, up-to-date te houden en te publiceren naar GitHub Pages.
