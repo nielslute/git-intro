@@ -1,8 +1,8 @@
 ---
-title: GitHub Intro
-description: Leer code op GitHub in een repository te plaatsen, up-to-date te houden en te publiceren naar GitHub Pages.
+title: Git Intro
+description: Leer de basis van versiebeheer met Git en social coding met GitHub.
 semester: 1
-taskclass: keuze_uit_taakklassen_per_semester
+taskclass: Git 
 level: 1
 behavior-criteria:{
   collaboration: 1,
