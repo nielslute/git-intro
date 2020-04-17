@@ -66,12 +66,12 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 1. Open de repository folder in een web editor naar keuze
 2. Pas de HTML, CSS en JavaScript aan. Geef er een persoonlijke invulling aan (Visitekaartje? Portfolio?)
 
-🔗
-* [Why use semantic HTML](https://www.lifewire.com/why-use-semantic-html-3468271)
-* [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [A complete guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-* [Media queries breakpoints](https://lancedesk.com/media-queries-breakpoints-css-tricks-media-queries-for-standard-devices/)
-* [How to animate on the web with GreenSock](https://css-tricks.com/how-to-animate-on-the-web-with-greensock/)
+
+🔗[Why use semantic HTML](https://www.lifewire.com/why-use-semantic-html-3468271)  
+🔗[A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  
+🔗[A complete guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)  
+🔗[Media queries breakpoints](https://lancedesk.com/media-queries-breakpoints-css-tricks-media-queries-for-standard-devices/)  
+🔗[How to animate on the web with GreenSock](https://css-tricks.com/how-to-animate-on-the-web-with-greensock/)  
 
 ## 4. Publiceer gewijzigde code naar GitHuB
 
