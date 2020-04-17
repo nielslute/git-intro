@@ -19,7 +19,7 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 * Maak een account aan op GitHub
 * Installeer Git op je laptop
 
-Bron: [Setup Git](https://help.github.com/en/github/getting-started-with-github/set-up-git)
+🔗 [Setup Git](https://help.github.com/en/github/getting-started-with-github/set-up-git)
 
 ## 2. Fork repository
 
@@ -29,7 +29,7 @@ Bron: [Setup Git](https://help.github.com/en/github/getting-started-with-github/
 2. Klik op de `Fork` knop , rechtsbovenaan de pagina
 3. Volg de stappen
 
-Bron: [Fork a repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+🔗 [Fork a repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 
 > _Door een repository te forken maak je een kopie onder je eigen GitHub account. Je kan dan aanpassingen doen die alleen in de geforkte repository worden doorgevoerd._
 
@@ -45,7 +45,7 @@ Bron: [Fork a repo](https://help.github.com/en/github/getting-started-with-githu
 
 > _Met GitHub Pages kan je statische webpagina's online beschikbaar maken via GitHub. Hiermee zijn de webpagina's online te bekijken._
 
-Bron: [About GitHub Pages](https://help.github.com/en/github/working-with-github-pages/about-github-pages)
+🔗 [About GitHub Pages](https://help.github.com/en/github/working-with-github-pages/about-github-pages)
 
 ## 3. Werk lokaal aan de code en publiceer naar GitHub
 
@@ -59,15 +59,14 @@ Bron: [About GitHub Pages](https://help.github.com/en/github/working-with-github
 
 > _Een clone is de lokale versie van de repository op jou machine. Voordat je wijzigingen kan doen aan bestanden, moet je dus eerste de repository clonen._
 
-Bron: [Getting changes from a remote repo](https://help.github.com/en/github/using-git/getting-changes-from-a-remote-repository)
+🔗 [Getting changes from a remote repo](https://help.github.com/en/github/using-git/getting-changes-from-a-remote-repository)
 
 **Change HTML, CSS and JavaScript bestanden**
 
 1. Open de repository folder in een web editor naar keuze
 2. Pas de HTML, CSS en JavaScript aan. Geef er een persoonlijke invulling aan (Visitekaartje? Portfolio?)
 
-Bronnen:
-
+🔗
 * [Why use semantic HTML](https://www.lifewire.com/why-use-semantic-html-3468271)
 * [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [A complete guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
@@ -98,7 +97,7 @@ En tenslotte gebruik je het commando `git push` om de commit te publiceren.
 
 > _Met push publiceer je de bestanden die in de commit zitten van de lokale repository naar de online repository._
 
-Bron: [Adding a file to a repo using the command line](https://help.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository-using-the-command-line)
+🔗 [Adding a file to a repo using the command line](https://help.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository-using-the-command-line)
 
 ## 5. Documenteer je bevindingen
 
@@ -106,8 +105,8 @@ Bron: [Adding a file to a repo using the command line](https://help.github.com/e
 
 In de README.md beschrijf je het project. Bijvoorbeeld de technieken die gebruikt zijn en /of een beschrijving van third-party libraries.
 
-[About READMEs](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes)
+🔗 [About READMEs](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes)
 
 **Documenteer je bevindingen in de CHANGELOG.md**
 
-[How to keep a change log](https://keepachangelog.com/en/0.3.0/)
+🔗 [How to keep a change log](https://keepachangelog.com/en/0.3.0/)
