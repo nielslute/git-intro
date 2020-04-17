@@ -57,7 +57,7 @@ Bron: [About GitHub Pages](https://help.github.com/en/github/working-with-github
 4. Type het commando `git clone [WEB URL]` en druk Enter
 5. De repository wordt nu gedownload naar jou lokale machine
 
-> _Een clone is de lokale versie van de repository op jou machine. Voordta je wijzigingen kan doen aan bestanden, moet je dus eerste de repository clonen._
+> _Een clone is de lokale versie van de repository op jou machine. Voordat je wijzigingen kan doen aan bestanden, moet je dus eerste de repository clonen._
 
 Bron: [Getting changes from a remote repo](https://help.github.com/en/github/using-git/getting-changes-from-a-remote-repository)
 
