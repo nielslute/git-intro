@@ -18,110 +18,73 @@
 
   <main id="impress" data-transition-duration="1000">
 
-<!-- center slide -->
-    <section class="step slide" id="futureproof" data-z="0">
-        <h1>Git Introductie</h1>
-        <p>Leer de basis van versiebeheer met Git en social coding met GitHub.</p>
+<!-- Title slide -->
+    <section class="step slide" id="first" data-z="0">
+      <h1>Git Introductie</h1>
+      <p>Leer de basis van versiebeheer met Git en social coding met GitHub.</p>
+      <a href="https://github.com"><img src="./img/octocat.png" alt="GitHub is where people build software"></a>
+      <code>
+> git pull
+> git add .
+> git commit -m 'upgraded feature x'
+> git push
+</code>
+
+        <cite>door Joost Faber & Justus Sturkenboom van Ad Frontend Design & Development</cite>
         
-        <code>
-            blah
-        </code>
+        <div class="notes">
+        </div>
+    </section>
 
-        <cite>Joost Faber & Justus Sturkenboom</cite>
+    <section class="step slide" id="vandaag" data-x="1000">
+        <h1>Vandaag</h1>
+        <ul>
+          <li>Over versiebeheersystemen</li>
+          <li>Waarom wil je een VCS gebruiken?</li>
+          <li>Git is defacto standaard...</li>
+          <li>Waarom dit iets voor jou is...</li>
+          <li>Git basics, waaronder:
+            <ul>
+              <li>(Installatie van Git)</li>
+              <li>Standaard handelingen in git</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="notes">
+        </div>
+    </section>
+
+    <section class="step slide" id="VCS" data-x="2000">
+        <h1>Git is een versiebeheersysteem (VCS)</h1>
+
+        <article>
+          <p>Een VCS helpt je met het uit elkaar houden van verschillende <em>versies</em> van bestanden en mappen. Ook als je met meerdere ontwikkelaars aan hetzelfde project werkt.</p>
+          <p>Het is een log waarin staat wie, wat, wanneer heeft gedaan (en waarom door middel van commit messages).</p>
+          <ul>
+
+            <li>Er zijn verschillende VCSen:
+              <ul>
+                <li>Non-distributed: Subversion, CVS</li>
+                <li>Distributed: Git, Mercurial</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
         
-        <div class="notes">
-        </div>
-    </section>
-
-    <section class="step slide" data-z="-1100">
-        <h1>TOC</h1>
-        <ul>
-          <li>Current state of affairs</li>
-          <li>Mapping technological change</li>
-          <li>Understanding technological change</li>
-          <li>Enter science fiction</li>
-        </ul>
-        <ul>
-          <li>Scenario challenge</li>
-        </ul>
+        <img src="./img/fileHell.png" alt="Dit eindigt in tranen...">
 
         <div class="notes">
         </div>
     </section>
 
-    <section class="step slide" id="revolution" data-x="-2200" data-y="-800"  data-z="-1100">
-        <h1>We're in a huge revolution</h1>
 
-        <div class="notes">
-          Did you notice we’re in the middle of a huge revolution?
-          Unmanaged life evolved slowly, through copying, mutation, succeeding,
-          failing. These days we’ve entered the era of digital life in which
-          generations of technology follow each other much more rapidly. Is this
-          wholly different from the way life changed before?
-        </div>
-    </section>
-
-    <section class="step slide" id="singularityLog" data-rel-z="-1100">
-        <div class="notes">
-        </div>
-    </section>
-
-    <section class="step slide" id="singularityLin">
-        <div class="notes">
-        </div>
-    </section>
-
-    <section class="step slide" id="heraclitus">
-      <blockquote>
-        <p>τὰ πάντα ῥεῖ καὶ οὐδὲν μένει<br/>
-        Change is the only constant factor</p>
-        <cite>Heraclitus (540 - 480 BC)</cite>
-      </blockquote>
-
-      <div class="notes">
-        Not really, Heraklitus already stated his famous *pantha rei kai ouden
-        menei*, everything flows, nothing is permanent. Change is the only constant
-        factor in the history of our universe. There is however, a noticeable
-        difference in the frequency of change.
-      </div>
-    </section>
-
-    
-
-<!-- New 3D position -->
-    <section class="step slide" id="mcluhan" data-x="-800" data-y="-1600" data-z="-1100">
-      <h1>Mapping technological change</h1>
-      <blockquote>
-        <p>We experience life through the rearview mirror, we’re walking backwards into the future.</p>
-        <cite>Understanding Media by Marshall McLuhan</cite>
-      </blockquote>
-
-      <div class="notes">
-        Mapping technological change is the process of trying to make sense of
-        the current wave we're riding. Because the future is by definition
-        unknowledgable we have to look back, learn from experiences we've <head>
-        and extrapolate onto possible futures.
-        </head>
-      </div>
-    </section>
-
-    <section class="step slide" id="gartner" data-rel-z="-1100">
-      <h1>Gartner hype cycle<br/> for emerging<br/> technologies</h1>
-      <p>Source Gartner.com 22/08/2018</p>
-
-      <div class="notes">
-        They also make an impact chart, AI/deep neural nets and personal
-        assistants are going to make an impact within the next 2 years.
-      </div>
-    </section>
-
-
-    <div id="overview" class="step" data-x="0" data-y="0" data-z="-3000" data-scale="10" style="pointer-events: none;">
+    <div class="step" id="overview" data-x="0" data-y="0" data-z="-3000" data-scale="10" style="pointer-events: none;">
     </div>
 </main>
 
   <!-- <div id="impress-toolbar"></div> -->
-  <!-- <div class="impress-progressbar"><div></div></div> -->
+  <div class="impress-progressbar"><div></div></div>
   <div class="impress-progress"><div></div></div>
   <div id="impress-help"></div>
 
