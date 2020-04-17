@@ -108,6 +108,4 @@ In de README.md beschrijf je het project. Bijvoorbeeld de technieken die gebruik
 
 **Documenteer je bevindingen in de CHANGELOG.md**
 
-Documenteer je bevindingen in de CHANGELOG.md
-
 [How to keep a change log](https://keepachangelog.com/en/0.3.0/)
