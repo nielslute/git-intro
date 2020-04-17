@@ -1,4 +1,6 @@
-# GitHub Intro
+# Git Introductie
+
+![Git Intro](https://fdnd-task.github.io/git-intro/static/img/github-intro.png)
 
 ## Het doel van deze opdracht
 
