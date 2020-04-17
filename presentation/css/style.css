@@ -1,0 +1,601 @@
+/* *************************
+ * GENERAL STYLE
+ ***************************/
+* { margin:0; padding:0; box-sizing: border-box; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+html,
+body {
+  height: 100vh;
+}
+body {
+  font-family: 'open sans', sans-serif;
+  font-size: 1.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  width: 80vw;
+  max-width: 40em;
+  background-color: #eee;
+  padding: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to top right, #a7f19b, #7cbae6);
+  overflow: hidden;
+  border-radius: 0.5em;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+}
+h1, h2, h3 {
+  grid-column: 1 / 3;
+  margin-bottom: .2em;
+}
+p {
+  grid-column: 1 / 2;
+  margin-bottom: 3em;
+}
+
+strong {
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color:rgb(0,160,254);
+}
+a:hover, a:focus {
+  color:rgb(0,130,224);
+}
+iframe {
+  margin-left: 40px;
+}
+ul, ol {
+  margin: 40px 40px 40px 80px;
+  font-size:48px;
+}
+
+blockquote {
+  font-family: serif;
+  border-left: .4em solid #ccc;
+  margin: 1em .4em;
+  padding: 0.5em 10px;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote cite {
+  display: block;
+  margin: .2em 40px;
+  font-style: italic;
+  font-size: .8em;
+}
+
+.fullscreen {
+  position:absolute;
+  top:350px;
+  font-size:48px;
+}
+
+img {
+  max-width: 90%;
+  width: 25vw;
+  margin-bottom: 1em;
+}
+
+/* section {
+  background-color: #000;
+  color: #fff;
+  font-size: 1em;
+  font-family: monospace;
+  border-radius: 0.5em;
+  padding-bottom: 1em;
+  grid-column: 1 / 3;
+}
+section header {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8em;
+  background: linear-gradient(to top, #ccc, #f5f5f5);
+  color: #000;
+  padding: 0;
+  position: relative;
+  line-height: 2;
+  margin-bottom: 2em;
+  border-radius: 0.5em 0.5em 0 0;
+}
+section h1 {
+  font-weight: normal;
+  margin: 0;
+}
+section ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  left: 0.5em;
+  top: 0;
+}
+section ul li {
+  text-indent: -666em;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 0.5em;
+}
+section ul li:nth-child(2) {
+  background-color: orange;
+}
+section ul li:nth-child(3) {
+  background-color: green;
+}
+
+section code {
+  display: block;
+  padding-left: 1em;
+} */
+
+@media (min-width: 60em) {
+  main {
+    grid-template-columns: 0.75fr 1.25fr;
+  }
+
+  p {
+    grid-column: 1 / 3;
+  }
+
+  section {
+    grid-column: 2 / 3;
+  }
+}
+
+/* END JOOST CSS */
+
+ /* Impress addons */
+impress-enabled div#impress-toolbar {
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    opacity: 0.8;
+    z-index: 10;
+}
+.impress-enabled div#impress-toolbar > span {
+    margin-right: 10px;
+}
+body.impress-mouse-timeout div#impress-toolbar {
+    display: none;
+}
+body.impress-mouse-timeout {
+    cursor: none;
+}
+.impress-progressbar {
+  position: absolute;
+  right: 118px;
+  bottom: 1px;
+  left: 118px;
+  border-radius: 7px;
+  border: 2px solid rgba(100, 100, 100, 0.2);
+}
+.impress-progressbar DIV {
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background: rgba(75, 75, 75, 0.4);
+  transition: width 1s linear;
+}
+.impress-progress {
+  position: absolute;
+  left: 59px;
+  bottom: 1px;
+  text-align: left;
+  font-size: 10pt;
+  opacity: 0.6;
+}
+.impress-enabled #impress-help {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    color: #EEEEEE;
+    font-size: 80%;
+    position: fixed;
+    left: 2em;
+    bottom: 2em;
+    width: 24em;
+    border-radius: 1em;
+    padding: 1em;
+    text-align: center;
+    z-index: 100;
+    font-family: Verdana, Arial, Sans;
+}
+.impress-enabled #impress-help td {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/*******************************
+ * FALLBACK MESSAGE
+  ******************************/
+.fallback-message {
+  font-family: sans-serif;
+  line-height: 1.3;
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
+  border: 1px solid #E4C652;
+  border-radius: 10px;
+  background: #EEDC94;
+}
+.fallback-message p {
+  margin-bottom: 10px;
+}
+.impress-supported .fallback-message {
+  display: none;
+}
+
+/***************************************
+ * SLIDE
+ ***************************************/
+
+ .step { }
+.slide { }
+
+.summary,
+.dark {
+  color: #F8F1E3;
+  background-color: #47434C;
+  background-repeat: no-repeat;
+}
+
+/******************************
+ * STEPS
+ ******************************/
+.step {
+  position: relative;
+  margin: 20px auto;
+}
+.impress-enabled .step {
+  opacity: 0.3;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition:    opacity 1s;
+  -ms-transition:     opacity 1s;
+  -o-transition:      opacity 1s;
+  transition:         opacity 1s;
+}
+
+.impress-enabled .step.active {
+  opacity: 1
+}
+
+/******************************
+ * NOTES
+ ******************************/
+.notes {
+    display: none;
+}
+
+/*************************************
+ * UNIQUE STEPS
+ ************************************/
+/* #enzaflyer {
+  background: url(../img/ez2018_ITF-flyer.jpg);
+  background-size: cover;
+  width: 1920px;
+  height: 1080px;
+  margin-top: 0;
+}
+
+#futureproof {
+  background: url(../img/whirl.gif);
+  background-size: cover;
+}
+#futureproof h1,
+#futureproof h2,
+#futureproof h3 {
+  margin-left: 20px;
+  text-align: left;
+  color: #F8F1E3;
+}
+#futureproof h2,
+#futureproof h3 {
+  font-family: 'HelveticaNeue', helvetica, sans-serif;
+}
+
+#revolution {
+  background: url(../img/digitalearth.jpg);
+  background-size: cover;
+}
+
+#revolution h1 {
+  color: #ccc;
+  text-align: left;
+  width: 500px;
+}
+
+#singularityLog {
+  background: url(../img/CountdowntoSingularityLog.jpg);
+  background-size: contain;
+  background-color: white;
+}
+
+#singularityLin {
+  background: url(../img/CountdowntoSingularityLin.jpg);
+  background-size: contain;
+  background-color: white;
+}
+
+#heraclitus {
+  background: url(../img/heraclitus.jpg);
+  background-size: cover;
+}
+#heraclitus h1 {
+  text-align: left;
+  width: 600px;
+}
+#heraclitus blockquote {
+  margin-top: 5em;
+  font-size: 1.6em;
+}
+
+#virillio {
+  background: url(../img/motionblur.jpg);
+  background-size: cover;
+}
+#virillio blockquote {
+  font-size: 1.6em;
+}
+
+#psychological {
+  background: url(../img/overload.jpeg);
+  background-size: cover;
+}
+#psychological h1 {
+  text-align: left;
+  color: black;
+  width: 600px;
+  position: relative;
+}
+
+#grip {
+  background: url(../img/documents.jpg);
+  background-size: cover;
+}
+#grip  h1 {
+  color: black;
+  text-align: left;
+  width: 300px;
+}
+
+#mcluhan {
+  background: url(../img/rearviewmirror.jpeg);
+  background-size: cover;
+}
+#mcluhan h1 {
+  color: #ccc;
+}
+#mcluhan blockquote {
+  margin-top: .4em;
+  font-size: 1.6em;
+  color: #ccc;
+}
+
+#gartner {
+  background: url(../img/hypecycleforemergingtech.png) bottom left no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+#gartner h1, #gartner p {
+  margin-right: 20px;
+  clear: both;
+  float: right;
+  text-align: right;
+}
+
+#fti {
+  background: url(../img/ftimethod.png) bottom left no-repeat;
+  background-color: white;
+  background-size: 840px;
+}
+
+#fti p, #fti cite {
+  margin-right: 60px;
+  clear: both;
+  width: 300px;
+  float: right;
+  text-align: right;
+}
+
+#change {
+  background: url(../img/change.gif);
+  background-size: cover;
+}
+
+#kuhn {
+  background: url(../img/paradigm.png) 0 center no-repeat;
+  background-size: contain;
+  background-color: white;
+}
+#kuhn p {
+  text-align: right;
+  margin-right: 60px;
+}
+
+#spheres {
+  background: url(../img/spheres.png) 0 center no-repeat;
+  background-size: contain;
+  background-color: black;
+  color: white;
+}
+#spheres p {
+  text-align: right;
+  margin-right: 60px;
+}
+
+#pyramid {
+  background: url(../img/pyramid2.jpg) 0 center no-repeat;
+  background-size: contain;
+  background-color: white;
+  color: black;
+}
+#pyramid h1,
+#pyramid p {
+  text-align: left;
+  margin-left: 60px;
+  width: 260px;
+}
+
+#distopia {
+  background: url(../img/distopia2.jpg) 0 -1200px no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+#distopia h1 {
+  color: black;
+}
+#distopia blockquote {
+  margin-top: .8em;
+  font-size: 1.4em;
+  width: 640px;
+  float: right;
+  color: black;
+  background-color: rgba(220,220,220,.5);
+}
+
+#frankenstein {
+  background: url(../img/frankenstein.jpg) -100px center no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+#frankenstein h1,
+#frankenstein h2 {
+  text-align: right;
+  margin-left: 60px;
+  color: white;
+  width: 250px;
+  float: right;
+  clear: both;
+}
+
+#forster {
+  background: url(../img/forster.jpg) 0 center no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+#forster h1,
+#forster h2 {
+  text-align: right;
+  margin-left: 60px;
+  color: black;
+  width: 310px;
+  float: right;
+  clear: both;
+}
+
+#bravenewworld {
+  background: url(../img/bravenewworld.jpg) 0 center no-repeat;
+  background-size: contain;
+  background-color: black;
+}
+#bravenewworld h1,
+#bravenewworld h2 {
+  text-align: right;
+  margin-left: 60px;
+  color: white;
+  width: 310px;
+  float: right;
+  clear: both;
+}
+
+#neuromancer {
+  background: url(../img/neuromancer.jpeg) -310px -200px no-repeat;
+  background-color: black;
+}
+#neuromancer h1,
+#neuromancer h2 {
+  text-align: right;
+  margin-left: 60px;
+  color: black;
+  width: 250px;
+  float: right;
+  clear: both;
+}
+
+#madness {
+  background: url(../img/ecoli2.jpg) center center no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+#madness h1,
+#madness h2 {
+  text-align: left;
+  margin-left: 60px;
+  color: white;
+  width: 300px;
+  float: left;
+  clear: both;
+}
+
+#sunshine {
+  background: url(../img/rootbridge.jpg) center 0 no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+#sunshine h1,
+#sunshine h2 {
+  text-align: left;
+  margin-left: 60px;
+  color: black;
+  width: 250px;
+  float: left;
+  clear: both;
+  background-color: rgba(220,220,220,.5);
+}
+
+#hybrids {
+  background: url(../img/springSprite.jpg) center 0 no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+#hybrids h1,
+#hybrids h2 {
+  color: white;
+  width: 600px;
+  float: right;
+}
+
+#utopia {
+  background: url(../img/solarpunk.jpg) center 0 no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+#utopia h1,
+#utopia h2 {
+  text-align: left;
+  margin-left: 60px;
+  color: black;
+  width: 250px;
+  float: left;
+  clear: both;
+  background-color: rgba(220,220,220,.6);
+}
+
+#scenariochallenge {
+  background: url(../img/ez2018_ITF-flyer.jpg) center center no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+#scenariochallenge h1,
+#scenariochallenge h2 {
+  color: white;
+  width: 600px;
+  float: right;
+}
+
+#phase1 ul li,
+#phase2 ul li,
+#phase3 ul li {
+  font-family: 'HelveticaNeue', helvetica, sans-serif;
+  font-size: .7em;
+} */
