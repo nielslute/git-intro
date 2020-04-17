@@ -17,6 +17,8 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 * Maak een account aan op GitHub
 * Installeer Git op je laptop
 
+Bron: [Setup Git](https://help.github.com/en/github/getting-started-with-github/set-up-git)
+
 ## 2. Fork repository
 
 **Fork deze repository**
@@ -25,9 +27,9 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 2. Klik op de `Fork` knop , rechtsbovenaan de pagina
 3. Volg de stappen
 
-> _Door een repository te forken maak je een kopie onder je eigen GitHub account. Je kan dan aanpassingen doen die alleen in de geforkte repository worden doorgevoerd._
+Bron: [Fork a repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 
-[resource]
+> _Door een repository te forken maak je een kopie onder je eigen GitHub account. Je kan dan aanpassingen doen die alleen in de geforkte repository worden doorgevoerd._
 
 **Activeer GitHub Pages in de geforkte repository**
 
@@ -41,9 +43,9 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 
 > _Met GitHub Pages kan je statische webpagina's online beschikbaar maken via GitHub. Hiermee zijn de webpagina's online te bekijken._
 
-[resource]
+Bron: [About GitHub Pages](https://help.github.com/en/github/working-with-github-pages/about-github-pages)
 
-## 3. Werk lokaal aan de code
+## 3. Werk lokaal aan de code en publiceer naar GitHub
 
 **Clone de repository naar jou lokale machine**
 
@@ -55,14 +57,20 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 
 > _Een clone is de lokale versie van de repository op jou machine. Voordta je wijzigingen kan doen aan bestanden, moet je dus eerste de repository clonen._
 
-[resource]
+Bron: [Getting changes from a remote repo](https://help.github.com/en/github/using-git/getting-changes-from-a-remote-repository)
 
 **Change HTML, CSS and JavaScript bestanden**
 
 1. Open de repository folder in een web editor naar keuze
 2. Pas de HTML, CSS en JavaScript aan. Geef er een persoonlijke invulling aan (Visitekaartje? Portfolio?)
 
-[resource]
+Bronnen:
+
+* [Why use semantic HTML](https://www.lifewire.com/why-use-semantic-html-3468271)
+* [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [A complete guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+* [Media queries breakpoints](https://lancedesk.com/media-queries-breakpoints-css-tricks-media-queries-for-standard-devices/)
+* [How to animate on the web with GreenSock](https://css-tricks.com/how-to-animate-on-the-web-with-greensock/)
 
 ## 4. Publiceer gewijzigde code naar GitHuB
 
@@ -74,15 +82,11 @@ Met het commando `git status` kan je de status van de lokale, ook wel `local`, e
 
 Als er staat; `Changes not staged for commit`, voer dan het commando `git add .` uit.
 
-[resource]
-
 > _Staging betekent dat je aangeeft welke aangepaste bestanden in de lokale repository je wil gaan publiceren naar de online repository op GitHub_
 
 **Maak een commit aan met een commit message**
 
 Voer vervolgens het commando `git commit -m "een betekenisvolle commit message"`.
-
-[resource]
 
 > _Een commit is het pakketje bestanden dat je klaarzet om gepubliceerd te worden naar de online repository. Geef een betekenisvolle commit message mee, zodat later duidelijk terug te lezen is wat de commit omvat._
 
@@ -90,9 +94,9 @@ Voer vervolgens het commando `git commit -m "een betekenisvolle commit message"`
 
 En tenslotte gebruik je het commando `git push` om de commit te publiceren.
 
-[resource]
-
 > _Met push publiceer je de bestanden die in de commit zitten van de lokale repository naar de online repository._
+
+Bron: [Adding a file to a repo using the command line](https://help.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository-using-the-command-line)
 
 ## 5. Documenteer je bevindingen
 
@@ -100,10 +104,10 @@ En tenslotte gebruik je het commando `git push` om de commit te publiceren.
 
 In de README.md beschrijf je het project. Bijvoorbeeld de technieken die gebruikt zijn en /of een beschrijving van third-party libraries.
 
-[resource]
+[About READMEs](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes)
 
 **Documenteer je bevindingen in de CHANGELOG.md**
 
 Documenteer je bevindingen in de CHANGELOG.md
 
-[resource]
+[How to keep a change log](https://keepachangelog.com/en/0.3.0/)
