@@ -6,18 +6,18 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 
 ## Stappen
 
-* [Setup GitHub](#setup)
-* [Fork repository](#fork-repository)
-* [Werk aan de code](#werk-lokaal-aan-de-code)
-* [Publiceer de code](#publiceer-gewijzigde-code-naar-github)
-* [Documenteer je bevindingen](#documenteer-je-bevindingen)
+1. [Setup GitHub](#1-setup)
+2. [Fork repository](#2-fork-repository)
+3. [Werk aan de code](#3-werk-lokaal-aan-de-code)
+4. [Publiceer de code](#4-publiceer-gewijzigde-code-naar-github)
+5. [Documenteer je bevindingen](#5-documenteer-je-bevindingen)
 
-## Setup
+## 1. Setup
 
 * Maak een account aan op GitHub
-* Installeer GitHub op je laptop
+* Installeer Git op je laptop
 
-## Fork repository
+## 2. Fork repository
 
 **Fork deze repository**
 
@@ -43,7 +43,7 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 
 [resource]
 
-## Werk lokaal aan de code
+## 3. Werk lokaal aan de code
 
 **Clone de repository naar jou lokale machine**
 
@@ -64,7 +64,7 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 
 [resource]
 
-## Publiceer gewijzigde code naar GitHuB
+## 4. Publiceer gewijzigde code naar GitHuB
 
 **Check de status van je lokale en online repository**
 
@@ -94,7 +94,7 @@ En tenslotte gebruik je het commando `git push` om de commit te publiceren.
 
 > _Met push publiceer je de bestanden die in de commit zitten van de lokale repository naar de online repository._
 
-## Documenteer je bevindingen
+## 5. Documenteer je bevindingen
 
 **Beschrijf het project in de README.md**
 
