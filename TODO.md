@@ -1,8 +1,12 @@
 # GitHub Intro
 
+---
+
 ## Het doel van deze opdracht
 
 In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het beheren van verschillende versies van bestanden in een Git repository. Daarnaast leer je hoe je webpagina's kan hosten op GitHub pages zodat het resltaat van de code online bekeken kan worden in de browser.
+
+---
 
 ## Stappen
 
@@ -12,12 +16,16 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 * [Publiceer de code](#publiceer-gewijzigde-code-naar-github)
 * [Documenteer je bevindingen](#documenteer-je-bevindingen)
 
-### Setup
+---
+
+## Setup
 
 * Maak een account aan op GitHub
 * Installeer GitHub op je laptop
 
-### Fork repository
+---
+
+## Fork repository
 
 **Fork deze repository**
 
@@ -43,7 +51,9 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 
 [resource]
 
-### Werk lokaal aan de code
+---
+
+## Werk lokaal aan de code
 
 **Clone de repository naar jou lokale machine**
 
@@ -64,7 +74,9 @@ In deze opdracht leer je werken met Git en GitHub. Hierbij ligt de nadruk op het
 
 [resource]
 
-### Publiceer gewijzigde code naar GitHuB
+---
+
+## Publiceer gewijzigde code naar GitHuB
 
 **Check de status van je lokale en online repository**
 
@@ -94,7 +106,9 @@ En tenslotte gebruik je het commando `git push` om de commit te publiceren.
 
 > _Met push publiceer je de bestanden die in de commit zitten van de lokale repository naar de online repository._
 
-### Documenteer je bevindingen
+---
+
+## Documenteer je bevindingen
 
 **Beschrijf het project in de README.md**
 
