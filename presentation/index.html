@@ -37,17 +37,21 @@
     <!-- Agenda -->
     <section class="step slide" id="vandaag" data-x="1000">
         <h1>Vandaag</h1>
-        <ul>
+        <strong>Luisteren naar een klein beetje theorie</strong>
+        <ul style="margin-top: 0;">
           <li>Waarom automatisch versies beheren?</li>
-          <li>Verschillende typen versiebeheersystemen</li>
-          <li>Git is defacto standaard...</li>
-          <li>Waarom dit iets voor jou is...</li>
-          <li>Git basics, waaronder:
-            <ul>
-              <li>(Installatie van Git)</li>
-              <li>Standaard handelingen in git</li>
-            </ul>
-          </li>
+          <li>Verschillende oplossingen</li>
+          <li>Git FTW!</li>
+          <li>Manieren van werken in Git</li>
+          <li>Overzicht van Git commando's</li>
+          <li>GitHub</li>
+        </ul>
+
+        <strong>Actieve kennismaking met Git in GitHub</strong>
+        <ul style="margin-top: 0;">
+          <li>Klonen van een remote repository</li>
+          <li>Maken, klaarzetten en versturen van aanpassingen</li>
+          <li>Publiceren van een eenvoudige website via GitHub!</li>
         </ul>
 
         <div class="notes">
@@ -55,7 +59,7 @@
     </section>
 
     <!-- Waarom -->
-    <section class="step slide" id="why" data-x="2000">
+    <section class="step slide" id="why" data-x="0" data-y="1000">
       <h1>Waarom automa(t/g)isch versies beheren?</h1>
       <p>Omdat je bij samenwerking wel eens tegelijk in een bestand werkt en rondsturen via e-mail i) heel erg 1971 is en ii) een rotzooi in je mappen geeft. Tegelijkertijd is het wel degelijk handig om oudere versies van je bestanden te bewaren. Daar moet toch een slimme oplossing voor zijn?</p>
       <code>
@@ -76,56 +80,182 @@ report_20200107.html
       </div>
     </section>
 
-    <section class="step slide" id="vcs" data-x="3000">
+    <section class="step slide" id="vcs" data-x="1000">
       <h1>Oplossing: Lokaal versiebeheer</h1>
       <article>
         <p>Je kunt je een oplossing voorstellen waarbij op jouw computer verschillende versies van bestanden in een systeem opgeslagen worden, dit heet <em>lokaal versiebeheer</em>. Bijvoorbeeld dagelijks automatische backups in <em>timepage</em> maar ook de <em>undo</em> via cmd+z.</p>
         <p>Als je per ongeluk een fout maakt kan je altijd een stapje terug naar een eerdere versie. Maar hoe werk je samen?</p>
       </article>
-      <img src="./img/versionControl.png" alt="Gecentraliseerd versiebeheer">
+      <figure>
+        <img src="./img/versionControl.png" alt="Gecentraliseerd versiebeheer">
+        <figcaption>Bron: <a href="https://geekcontainer.wordpress.com/2017/09/20/a-conceptual-approach-of-version-control-systemgit-series-1/">Geekcontainer</a></figcaption>
+      </figure>
+      
 
       <div class="notes">
       </div>
     </section>
 
-    <section class="step slide" id="vcs2" data-x="4000">
+    <section class="step slide" id="vcs2" data-x="2000">
       <h1>Oplossing: Gecentraliseerd versiebeheer</h1>
       <article>
-        <p>Je kunt je ook een oplossing voorstellen waarbij op één server verschillende versies van bestanden opgeslagen worden, dit heet <em>gecentraliseerd versiebeheer</em>. Iedereen verstuurd zijn bestanden naar die ene server en daar blijven alle wijzigingen bewaard. Implementaties van dit principe zijn <em>Subversion</em> en <em>CVS</em> maar ook <em>Git</em> kan op deze manier gebruikt worden.</p>
-        <p>Als iemand per ongeluk een fout maakt kan iedereen altijd een stapje terug naar een eerdere versie, maar wat als de server omvalt?</p>
+        <p>Je kunt je ook een oplossing voorstellen waarbij op één server verschillende versies van bestanden opgeslagen worden, dit heet <em>gecentraliseerd versiebeheer</em>. Iedereen verstuurd zijn bestanden naar die ene <em>repository</em> en daar blijven alle wijzigingen bewaard. Implementaties van dit principe zijn <em>Subversion</em> en <em>CVS</em> maar ook <em>Git</em> kan op deze manier gebruikt worden.</p>
+        <p>Als iemand per ongeluk een fout maakt kan iedereen altijd een stapje terug naar een eerdere versie. Maar wat als de server omvalt?</p>
       </article>
-      <img src="./img/centralizedVersionControl.png" alt="Gecentraliseerd versiebeheer">
+      <figure>
+        <img src="./img/centralizedVersionControl.png" alt="Gecentraliseerd versiebeheer">
+        <figcaption>Bron: <a href="https://geekcontainer.wordpress.com/2017/09/20/a-conceptual-approach-of-version-control-systemgit-series-1/">Geekcontainer</a></figcaption>
+      </figure>
 
       <div class="notes">
       </div>
     </section>
 
+    <section class="step slide" id="vcs3" data-x="3000">
+      <h1>Oplossing: Gedistribueerd versiebeheer</h1>
+      <article>
+        <p>Je kunt je ook een oplossing voorstellen waarbij op elke computer alle verschillende versies van bestanden opgeslagen worden, dit heet <em>gedistribueerd versiebeheer</em>. Elke computer kloont de volledige historie van alle bestanden en mappen in een <em>repository</em>. Iedereen werkt in de lokale kloon en deelt alle wijzigingen met iedereen. Het systeem zorgt voor samenvoegen, de juiste versies etcetera. Implementaties van dit principe zijn <em>Mercurial</em> en natuurlijk <em>Git</em>.</p>
+      </article>
+      <figure>
+        <img src="./img/distributedVersionControl.png" alt="Gedistribueerd versiebeheer">
+        <figcaption>Bron: <a href="https://geekcontainer.wordpress.com/2017/09/20/a-conceptual-approach-of-version-control-systemgit-series-1/">Geekcontainer</a></figcaption>
+      </figure>
+      
 
-    <section class="step slide" id="git" data-x="5000">
-        <h1>Git is een versiebeheersysteem (VCS)</h1>
+      <div class="notes">
+      </div>
+    </section>
+
+    <section class="step slide" id="git" data-x="4000">
+        <h1>Git is een gedistribueerd versiebeheersysteem</h1>
 
         <article>
-          <p>Een VCS helpt je met het uit elkaar houden van verschillende <em>versies</em> van bestanden en mappen. Ook als je met meerdere ontwikkelaars aan hetzelfde project werkt.</p>
-          <p>Het is een log waarin staat wie, wat, wanneer heeft gedaan (en waarom door middel van commit messages).</p>
-          <ul>
-
-            <li>Er zijn verschillende VCSen:
-              <ul>
-                <li>Non-distributed: Subversion, CVS</li>
-                <li>Distributed: Git, Mercurial</li>
-              </ul>
-            </li>
-          </ul>
+          <p>Een van de tofste dingen van Git is dat het gedistribueerd is. Zodra je samenwerkt zijn er automagisch backups van alle bestanden!</p>
+          <p>Git is <a href="https://git-scm.com/about/free-and-open-source">gratis en open source</a>!</p>
+          <p>Git is (relatief) <a href="https://git-scm.com/book/en/v2">makkelijk te leren</a>.</p>
+          <p>Git presteert supergoed, er worden <a href="https://github.com/rtyley/small-test-repo">hele kleine</a> maar ook <a href="https://www.atlassian.com/git/tutorials/big-repositories">supergrote projecten</a> in uitgevoerd.</p>
+          <p>Git ondersteunt vele manieren van werken.</p>
         </article>
-        
+        <figure>
+          <img src="./img/git.png" alt="Git FTW!"><br/><br/>
+          <img src="./img/branches.png" alt="Branching in Git">
+          <figcaption></figcaption>
+        </figure>
 
         <div class="notes">
         </div>
     </section>
 
+    <section class="step slide" id="git2" data-y="2000" data-x="0">
+      <h1>Gecentraliseerd werken in Git</h1>
 
-    <div class="step" id="overview" data-x="0" data-y="0" data-z="-3000" data-scale="10" style="pointer-events: none;">
+      <article>
+       <p>Zoals net is aangegeven kan je gecentraliseerd werken in Git. Voor kleine projecten is dit prima, het verschil met SVN is dat elke developer in Git een volledige kopie (<em>git clone</em>) van de hele repository heeft. Na het maken van aanpassingen wordt de aanpassing gereed gemaakt voor verzenden (<em>git commit</em>) en naar de server verstuurd (<em>git push</em>).</p>
+      </article>
+      <figure>
+        <img src="./img/svn_workflow.png" alt="Centralized">
+        <figcaption></figcaption>
+      </figure>
+
+      <div class="notes">
+      </div>
+  </section>
+
+  <section class="step slide" id="git3" data-x="1000">
+    <h1>Integrating Manager, werken in Git</h1>
+
+    <article>
+      <p>Een andere manier van werken die veel wordt toegepast in open source ontwikkeltrajecten is de <em>Integrating Manager</em> benadering. Één eindverantwoordelijke verstuurd bestanden (<em>git push</em>) naar een zgn. <em>blessed repository</em>.</p>
+      <p>Ontwikkelaars klonen die repository (<em>git clone</em>), maken lokaal aanpassingen, zetten die klaar (<em>git commit</em>), versturen die naar hun eigen publieke repository (<em>git push</em>) en vragen vervolgens de eindverantwoordelijke de aanpassingen binnen te trekken (<em>git request-pull</em>), samen te voegen (<em>git merge</em>), klaar te zetten (<em>git commit</em>) en te versturen (<em>git push</em>) naar de blessed repository.</p>
+      <p>Dit zie je veel bij open-source op <a href="https://github.com/">GitHub</a>.</p>
+    </article>
+    <figure>
+      <img src="./img/integratingManagerWorkflow.png" alt="Integrating Manager Workflow">
+      <figcaption></figcaption>
+    </figure>
+
+      <div class="notes">
+      </div>
+  </section>
+
+  <section class="step slide" id="git4" data-x="2000">
+    <h1>Dictator en luitenanten, werken in Git</h1>
+
+    <article>
+      <p>Voor enorme projecten is een ontwikkeltraject als bij de Linux kernel vaak het meest effectief. Binnen dit model zijn <em>luitenanten</em> de baas over specifieke subsystemen van een project.</p>
+      <p>Luitenanten zorgen voor het binnen trekken (<em>git pull</em>) en samenvoegen (<em>git merge</em>) van alle aangeboden (<em>git request-pull</em>) aanpassingen van ontwikkelaars binnen die specifieke subsystemen.</p>      
+      <p>De <em>dictator</em> kijkt énkel naar door luitenanten aangeboden veranderingen (<em>git request-pull</em>) en trekt die vervolgens uit de repositories van luitenanten binnen (<em>git pull</em>) en stuurt ze naar de blessed repository (<em>git push</em> ).</p>
+    </article>
+    <figure>
+      <img src="./img/dictatorWorkflow.png" alt="Dictator and Lieutenants">
+      <figcaption></figcaption>
+    </figure>
+
+      <div class="notes">
+      </div>
+  </section>
+
+  <section class="step slide" id="git5" data-x="3000">
+    <h1>Git commando's op een rijtje...</h1>
+
+    <article>
+      <p><em>git clone</em>: maken van een exacte kopie, een kloon, van een remote repository (kort: repo) naar een lokale repo.</p>
+      <p><em>git commit</em>: klaarzetten van een aanpassing.</p>
+      <p><em>git push</em>: versturen van aanpassingen van een lokale repo naar een remote repo.</p>
+      <p><em>git pull</em>: binnentrekken van aangepaste bestanden uit een remote repo, soms als reactie op een pull-request.</p>
+      <p><em>git request-pull</em>: iemand anders vragen door jou gemaakte veranderingen op te nemen in haar repo.</p>
+      <p><em>git merge</em>: samenvoegen van verschillende versies van bestanden bij conflicten, bijvoorbeeld als twee ontwikkelaars tegelijk hetzelfde bestand hebben aangepast.</p>
+    </article>
+    <figure>
+      <img src="./img/git.png" alt="Git FTW!"><br/><br/>
+      <img src="./img/branches.png" alt="Branching in Git">
+      <figcaption></figcaption>
+    </figure>
+
+    <div class="notes">
     </div>
+  </section>
+
+  <section class="step slide" id="github" data-x="4000">
+    <h1>Nog niet overtuigd? Gratis hosting bij GitHub!</h1>
+
+    <figure>
+      <img src="./img/github.png" alt="Git FTFY!">
+      <figcaption></figcaption>
+    </figure>
+    <article>
+      <p>GitHub biedt hosting voor Git repositories.</p>
+      <p>GitHub is enige tijd geleden gekocht door Microsoft&reg; en sinds vorige week infinite private repositories op een gratis account. Heel veel open-source software, zeker in de web-branche wordt gehost op GitHub.</p>
+      <p>Nb: Het hele Ad Frontend Design & Development curriculum wordt in GitHub ontwikkeld!</p>
+    </article>
+
+    <div class="notes">
+    </div>
+  </section>
+
+  <section class="step slide" id="github2" data-y="3000" data-x="0">
+    <h1>Maar genoeg gepraat...</h1>
+    <p>Laten we wat gaan doen!</p>
+    <p>Als het goed is heb je Git al geinstalleerd én heb je een account op GitHub aangemaakt.</p>
+    <code>
+> git --version
+git version 2.26.1
+
+> git config --global user.name "ju5tu5"
+> git config --global user.name
+ju5tu5
+
+> git config --global user.email "justus@ju5tu5.nl"
+> git config --global user.email
+justus@ju5tu5.nl
+    </code>
+
+    <div class="notes">
+    </div>
+  </section>
+
+  <div class="step" id="overview" data-x="2000" data-y="1500" data-z="-3000" data-scale="10" style="pointer-events: none;">
+  </div>
 </main>
 
   <!-- <div id="impress-toolbar"></div> -->

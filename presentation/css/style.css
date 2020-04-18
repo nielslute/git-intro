@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #222;
 }
 section {
   width: 80vw;
@@ -27,7 +28,9 @@ section {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   grid-column: 1/3;
   margin-bottom: .4em; 
 }
@@ -39,12 +42,18 @@ p {
 strong {
   text-transform: uppercase;
 }
-a {
+a,
+a:link,
+a:visited {
+  display: inline-block;
+  color:#222;
   text-decoration: none;
-  color:rgb(0,160,254);
+  border-bottom: 1px dashed #999;
 }
-a:hover, a:focus {
-  color:rgb(0,130,224);
+a:hover,
+a:active {
+  background: yellow;
+  border-bottom: 1px dashed #222;
 }
 iframe, ul, ol {
   grid-column: 1/3;
@@ -52,6 +61,18 @@ iframe, ul, ol {
 }
 img {
   max-width: 90%;
+}
+figcaption {
+  font-size: .6em;
+  font-style: italic;
+  color: #666;
+}
+figcaption a,
+figcaption a:link,
+figcaption a:visited {
+  color: #666;
+  text-decoration: none;
+  border-bottom: 1px dashed #999;
 }
 code {
   background-color: #000;
@@ -228,18 +249,23 @@ body.impress-mouse-timeout {
 /*************************************
  * UNIQUE STEPS
  ************************************/
- #first code {
+#first code {
   grid-column: 2/3;
- }
- #first img {
-    width: 25vw;
- }
-
- #vcs img {
-  grid-column: 2/3;
- }
- #vcs article {
-  grid-column: 1/2;
- }
+}
+#first a,
+#first a:link,
+#first a:visited,
+#first a:hover,
+#first a:active {
+  border-bottom: none;
+  background-color: transparent;
+}
+#first figure {
+  width: 25vw;
+}
+#github figure img {
+  width: 100%;
+  grid-column: 1/3;
+}
 
  
