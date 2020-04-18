@@ -29,11 +29,12 @@ section {
 }
 h1, h2, h3 {
   grid-column: 1/3;
-  margin-bottom: .2em; 
+  margin-bottom: .4em; 
 }
 p {
   grid-column: 1/3;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  padding-right: 1em;
 }
 strong {
   text-transform: uppercase;
@@ -48,6 +49,9 @@ a:hover, a:focus {
 iframe, ul, ol {
   grid-column: 1/3;
   margin: 1em;
+}
+img {
+  max-width: 90%;
 }
 code {
   background-color: #000;
@@ -228,335 +232,14 @@ body.impress-mouse-timeout {
   grid-column: 2/3;
  }
  #first img {
-    max-width: 90%;
     width: 25vw;
  }
 
- #VCS img {
+ #vcs img {
   grid-column: 2/3;
-  max-width: 90%;
  }
- #VCS article {
+ #vcs article {
   grid-column: 1/2;
  }
 
- /* #enzaflyer {
-  background: url(../img/ez2018_ITF-flyer.jpg);
-  background-size: cover;
-  width: 1920px;
-  height: 1080px;
-  margin-top: 0;
-}
-
-#futureproof {
-  background: url(../img/whirl.gif);
-  background-size: cover;
-}
-#futureproof h1,
-#futureproof h2,
-#futureproof h3 {
-  margin-left: 20px;
-  text-align: left;
-  color: #F8F1E3;
-}
-#futureproof h2,
-#futureproof h3 {
-  font-family: 'HelveticaNeue', helvetica, sans-serif;
-}
-
-#revolution {
-  background: url(../img/digitalearth.jpg);
-  background-size: cover;
-}
-
-#revolution h1 {
-  color: #ccc;
-  text-align: left;
-  width: 500px;
-}
-
-#singularityLog {
-  background: url(../img/CountdowntoSingularityLog.jpg);
-  background-size: contain;
-  background-color: white;
-}
-
-#singularityLin {
-  background: url(../img/CountdowntoSingularityLin.jpg);
-  background-size: contain;
-  background-color: white;
-}
-
-#heraclitus {
-  background: url(../img/heraclitus.jpg);
-  background-size: cover;
-}
-#heraclitus h1 {
-  text-align: left;
-  width: 600px;
-}
-#heraclitus blockquote {
-  margin-top: 5em;
-  font-size: 1.6em;
-}
-
-#virillio {
-  background: url(../img/motionblur.jpg);
-  background-size: cover;
-}
-#virillio blockquote {
-  font-size: 1.6em;
-}
-
-#psychological {
-  background: url(../img/overload.jpeg);
-  background-size: cover;
-}
-#psychological h1 {
-  text-align: left;
-  color: black;
-  width: 600px;
-  position: relative;
-}
-
-#grip {
-  background: url(../img/documents.jpg);
-  background-size: cover;
-}
-#grip  h1 {
-  color: black;
-  text-align: left;
-  width: 300px;
-}
-
-#mcluhan {
-  background: url(../img/rearviewmirror.jpeg);
-  background-size: cover;
-}
-#mcluhan h1 {
-  color: #ccc;
-}
-#mcluhan blockquote {
-  margin-top: .4em;
-  font-size: 1.6em;
-  color: #ccc;
-}
-
-#gartner {
-  background: url(../img/hypecycleforemergingtech.png) bottom left no-repeat;
-  background-size: cover;
-  background-color: white;
-}
-#gartner h1, #gartner p {
-  margin-right: 20px;
-  clear: both;
-  float: right;
-  text-align: right;
-}
-
-#fti {
-  background: url(../img/ftimethod.png) bottom left no-repeat;
-  background-color: white;
-  background-size: 840px;
-}
-
-#fti p, #fti cite {
-  margin-right: 60px;
-  clear: both;
-  width: 300px;
-  float: right;
-  text-align: right;
-}
-
-#change {
-  background: url(../img/change.gif);
-  background-size: cover;
-}
-
-#kuhn {
-  background: url(../img/paradigm.png) 0 center no-repeat;
-  background-size: contain;
-  background-color: white;
-}
-#kuhn p {
-  text-align: right;
-  margin-right: 60px;
-}
-
-#spheres {
-  background: url(../img/spheres.png) 0 center no-repeat;
-  background-size: contain;
-  background-color: black;
-  color: white;
-}
-#spheres p {
-  text-align: right;
-  margin-right: 60px;
-}
-
-#pyramid {
-  background: url(../img/pyramid2.jpg) 0 center no-repeat;
-  background-size: contain;
-  background-color: white;
-  color: black;
-}
-#pyramid h1,
-#pyramid p {
-  text-align: left;
-  margin-left: 60px;
-  width: 260px;
-}
-
-#distopia {
-  background: url(../img/distopia2.jpg) 0 -1200px no-repeat;
-  background-size: cover;
-  background-color: black;
-}
-#distopia h1 {
-  color: black;
-}
-#distopia blockquote {
-  margin-top: .8em;
-  font-size: 1.4em;
-  width: 640px;
-  float: right;
-  color: black;
-  background-color: rgba(220,220,220,.5);
-}
-
-#frankenstein {
-  background: url(../img/frankenstein.jpg) -100px center no-repeat;
-  background-size: cover;
-  background-color: black;
-}
-#frankenstein h1,
-#frankenstein h2 {
-  text-align: right;
-  margin-left: 60px;
-  color: white;
-  width: 250px;
-  float: right;
-  clear: both;
-}
-
-#forster {
-  background: url(../img/forster.jpg) 0 center no-repeat;
-  background-size: cover;
-  background-color: black;
-}
-#forster h1,
-#forster h2 {
-  text-align: right;
-  margin-left: 60px;
-  color: black;
-  width: 310px;
-  float: right;
-  clear: both;
-}
-
-#bravenewworld {
-  background: url(../img/bravenewworld.jpg) 0 center no-repeat;
-  background-size: contain;
-  background-color: black;
-}
-#bravenewworld h1,
-#bravenewworld h2 {
-  text-align: right;
-  margin-left: 60px;
-  color: white;
-  width: 310px;
-  float: right;
-  clear: both;
-}
-
-#neuromancer {
-  background: url(../img/neuromancer.jpeg) -310px -200px no-repeat;
-  background-color: black;
-}
-#neuromancer h1,
-#neuromancer h2 {
-  text-align: right;
-  margin-left: 60px;
-  color: black;
-  width: 250px;
-  float: right;
-  clear: both;
-}
-
-#madness {
-  background: url(../img/ecoli2.jpg) center center no-repeat;
-  background-size: cover;
-  background-color: black;
-}
-#madness h1,
-#madness h2 {
-  text-align: left;
-  margin-left: 60px;
-  color: white;
-  width: 300px;
-  float: left;
-  clear: both;
-}
-
-#sunshine {
-  background: url(../img/rootbridge.jpg) center 0 no-repeat;
-  background-size: cover;
-  background-color: black;
-}
-#sunshine h1,
-#sunshine h2 {
-  text-align: left;
-  margin-left: 60px;
-  color: black;
-  width: 250px;
-  float: left;
-  clear: both;
-  background-color: rgba(220,220,220,.5);
-}
-
-#hybrids {
-  background: url(../img/springSprite.jpg) center 0 no-repeat;
-  background-size: cover;
-  background-color: black;
-}
-#hybrids h1,
-#hybrids h2 {
-  color: white;
-  width: 600px;
-  float: right;
-}
-
-#utopia {
-  background: url(../img/solarpunk.jpg) center 0 no-repeat;
-  background-size: cover;
-  background-color: black;
-}
-#utopia h1,
-#utopia h2 {
-  text-align: left;
-  margin-left: 60px;
-  color: black;
-  width: 250px;
-  float: left;
-  clear: both;
-  background-color: rgba(220,220,220,.6);
-}
-
-#scenariochallenge {
-  background: url(../img/ez2018_ITF-flyer.jpg) center center no-repeat;
-  background-size: cover;
-  background-color: black;
-}
-#scenariochallenge h1,
-#scenariochallenge h2 {
-  color: white;
-  width: 600px;
-  float: right;
-}
-
-#phase1 ul li,
-#phase2 ul li,
-#phase3 ul li {
-  font-family: 'HelveticaNeue', helvetica, sans-serif;
-  font-size: .7em;
-} */
+ 

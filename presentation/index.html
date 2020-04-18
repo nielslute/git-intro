@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Git Introductie | by Joost Faber & Justus Sturkenboom</title>
+  <meta charset="utf-8" />
+  <title>Git Introductie | by Joost Faber & Justus Sturkenboom</title>
 
-    <meta name="description" content="" />
-    <meta name="author" content="Joost Faber, Justus Sturkenboom" />
-
-    <link href="css/style.css" rel="stylesheet" />
-
+  <meta name="description" content="" />
+  <meta name="author" content="Joost Faber, Justus Sturkenboom" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 <body class="impress-not-supported">
   <div class="fallback-message">
@@ -18,7 +16,7 @@
 
   <main id="impress" data-transition-duration="1000">
 
-<!-- Title slide -->
+    <!-- Introductie -->
     <section class="step slide" id="first" data-z="0">
       <h1>Git Introductie</h1>
       <p>Leer de basis van versiebeheer met Git en social coding met GitHub.</p>
@@ -28,19 +26,20 @@
 > git add .
 > git commit -m 'upgraded feature x'
 > git push
-</code>
+      </code>
 
-        <cite>door Joost Faber & Justus Sturkenboom van Ad Frontend Design & Development</cite>
+      <cite>door Joost Faber & Justus Sturkenboom van de Ad Frontend Design & Development aan de HvA</cite>
         
-        <div class="notes">
-        </div>
+      <div class="notes">
+      </div>
     </section>
 
+    <!-- Agenda -->
     <section class="step slide" id="vandaag" data-x="1000">
         <h1>Vandaag</h1>
         <ul>
-          <li>Over versiebeheersystemen</li>
-          <li>Waarom wil je een VCS gebruiken?</li>
+          <li>Waarom automatisch versies beheren?</li>
+          <li>Verschillende typen versiebeheersystemen</li>
           <li>Git is defacto standaard...</li>
           <li>Waarom dit iets voor jou is...</li>
           <li>Git basics, waaronder:
@@ -55,7 +54,54 @@
         </div>
     </section>
 
-    <section class="step slide" id="VCS" data-x="2000">
+    <!-- Waarom -->
+    <section class="step slide" id="why" data-x="2000">
+      <h1>Waarom automa(t/g)isch versies beheren?</h1>
+      <p>Omdat je bij samenwerking wel eens tegelijk in een bestand werkt en rondsturen via e-mail i) heel erg 1971 is en ii) een rotzooi in je mappen geeft. Tegelijkertijd is het wel degelijk handig om oudere versies van je bestanden te bewaren. Daar moet toch een slimme oplossing voor zijn?</p>
+      <code>
+> cd teamreport
+> ls
+report.html
+report_20200103_v1.html
+report_20200104_v2.html
+report_20200105_v2_joost.html
+report_20200105_v2_koop.html
+report_20200105_v2_charley.html
+report_20200106_v3.html
+report_20200107_final.html
+report_20200107.html
+      </code>
+
+      <div class="notes">
+      </div>
+    </section>
+
+    <section class="step slide" id="vcs" data-x="3000">
+      <h1>Oplossing: Lokaal versiebeheer</h1>
+      <article>
+        <p>Je kunt je een oplossing voorstellen waarbij op jouw computer verschillende versies van bestanden in een systeem opgeslagen worden, dit heet <em>lokaal versiebeheer</em>. Bijvoorbeeld dagelijks automatische backups in <em>timepage</em> maar ook de <em>undo</em> via cmd+z.</p>
+        <p>Als je per ongeluk een fout maakt kan je altijd een stapje terug naar een eerdere versie. Maar hoe werk je samen?</p>
+      </article>
+      <img src="./img/versionControl.png" alt="Gecentraliseerd versiebeheer">
+
+      <div class="notes">
+      </div>
+    </section>
+
+    <section class="step slide" id="vcs2" data-x="4000">
+      <h1>Oplossing: Gecentraliseerd versiebeheer</h1>
+      <article>
+        <p>Je kunt je ook een oplossing voorstellen waarbij op één server verschillende versies van bestanden opgeslagen worden, dit heet <em>gecentraliseerd versiebeheer</em>. Iedereen verstuurd zijn bestanden naar die ene server en daar blijven alle wijzigingen bewaard. Implementaties van dit principe zijn <em>Subversion</em> en <em>CVS</em> maar ook <em>Git</em> kan op deze manier gebruikt worden.</p>
+        <p>Als iemand per ongeluk een fout maakt kan iedereen altijd een stapje terug naar een eerdere versie, maar wat als de server omvalt?</p>
+      </article>
+      <img src="./img/centralizedVersionControl.png" alt="Gecentraliseerd versiebeheer">
+
+      <div class="notes">
+      </div>
+    </section>
+
+
+    <section class="step slide" id="git" data-x="5000">
         <h1>Git is een versiebeheersysteem (VCS)</h1>
 
         <article>
@@ -72,7 +118,6 @@
           </ul>
         </article>
         
-        <img src="./img/fileHell.png" alt="Dit eindigt in tranen...">
 
         <div class="notes">
         </div>
