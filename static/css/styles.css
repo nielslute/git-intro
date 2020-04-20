@@ -9,6 +9,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+#main{
+  clear: bottom;
+  float: top;
+  border: 1px solid black;
+}
+
 main {
   width: 80vw;
   max-width: 40em;
@@ -103,4 +110,21 @@ section code {
   section {
     grid-column: 2 / 3;
   }
+}
+
+
+#main_nieuw{
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#nieuw1{
+  border: 1px solid black;
+  background: #cce2ff;
+}
+
+#nieuw2{
+  border: 1px solid black;
+  background: #80b7ff;
 }
