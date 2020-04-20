@@ -1,6 +1,7 @@
 html,
 body {
   height: 100vh;
+  background: #e0ffef;
 }
 body {
   font-family: 'open sans';
@@ -22,7 +23,7 @@ main {
   background-color: #eee;
   padding: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to top right, #a7f19b, #7cbae6);
+  background: linear-gradient(to top right, #ffc78f, #ff8f1f);
   overflow: hidden;
   border-radius: 0.5em;
   display: grid;
